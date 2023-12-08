@@ -10,7 +10,7 @@
         <div>
             <x-input
                 type="email"
-                label="Email Address"
+                :label="__('Email Address')"
                 wire:model="email"
                 required
                 autofocus
@@ -22,7 +22,7 @@
         <div class="mt-4">
             <x-input
                 type="password"
-                label="Password"
+                :label="__('Password')"
                 wire:model="password"
                 required
                 autocomplete="current-password"
