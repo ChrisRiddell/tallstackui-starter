@@ -3,10 +3,8 @@
         <!-- Name -->
         <div>
             <x-input
-                type="text"
                 :label="__('Name')"
                 wire:model="name"
-                required
                 autofocus
                 autocomplete="name"
             />
@@ -18,30 +16,24 @@
                 type="email"
                 :label="__('Email Address')"
                 wire:model="email"
-                required
-                autofocus
                 autocomplete="username"
             />
         </div>
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input
-                type="password"
+            <x-password
                 :label="__('Password')"
                 wire:model="password"
-                required
                 autocomplete="new-password"
             />
         </div>
 
         <!-- Confirm Password -->
         <div class="mt-4">
-            <x-input
-                type="password"
+            <x-password
                 :label="__('Confirm Password')"
                 wire:model="password_confirmation"
-                required
                 autocomplete="new-password"
             />
         </div>

@@ -12,7 +12,6 @@
                 type="email"
                 :label="__('Email Address')"
                 wire:model="email"
-                required
                 autofocus
                 autocomplete="username"
             />
@@ -20,11 +19,9 @@
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input
-                type="password"
+            <x-password
                 :label="__('Password')"
                 wire:model="password"
-                required
                 autocomplete="current-password"
             />
         </div>
