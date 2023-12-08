@@ -17,4 +17,5 @@ export default {
   },
 
   plugins: [forms],
+  darkMode: 'media',
 };

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html
+    class="bg-gray-100 dark:bg-gray-800"
+    lang="{{ str_replace('_', '-', app()->getLocale()) }}"
+>
 
     <head>
         <meta charset="utf-8">
@@ -21,7 +24,7 @@
     </head>
 
     <body class="font-sans text-gray-900 antialiased">
-        <div class="flex min-h-screen flex-col items-center bg-gray-100 pt-6 sm:justify-center sm:pt-0">
+        <div class="flex min-h-screen flex-col items-center pt-6 sm:justify-center sm:pt-0">
             <div class="w-full overflow-hidden px-6 py-4 sm:max-w-md">
                 <x-card>
                     {{ $slot }}
