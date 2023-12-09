@@ -40,7 +40,7 @@
 
         <div class="mt-4 flex items-center justify-end">
             <a
-                class="text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none"
+                class="text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none dark:text-gray-400 dark:hover:text-gray-500"
                 href="{{ route('login') }}"
                 wire:navigate
             >
