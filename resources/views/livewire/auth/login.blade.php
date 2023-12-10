@@ -1,9 +1,11 @@
 <div>
-    {{-- <!-- Session Status -->
-    <x-auth-session-status
-        class="mb-4"
-        :status="session('status')"
-    /> --}}
+    @if (session('status'))
+        <x-alert
+            text="session('status')"
+            color="blue"
+            light
+        />
+    @endif
 
     <form wire:submit="login">
         <!-- Email Address -->
@@ -34,6 +36,7 @@
             />
         </div>
 
+        <!-- Forgot your password -->
         <div class="mt-4 flex items-center justify-end">
             @if (Route::has('password.request'))
                 <a
@@ -45,6 +48,7 @@
                 </a>
             @endif
 
+            <!-- Login -->
             <x-button
                 class="ms-3"
                 text="Log in"

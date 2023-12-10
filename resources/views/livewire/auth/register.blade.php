@@ -38,6 +38,7 @@
             />
         </div>
 
+        <!-- Already registered? -->
         <div class="mt-4 flex items-center justify-end">
             <a
                 class="text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none dark:text-gray-400 dark:hover:text-gray-500"
@@ -47,6 +48,7 @@
                 {{ __('Already registered?') }}
             </a>
 
+            <!-- Register -->
             <x-button
                 class="ms-4"
                 text="Register"

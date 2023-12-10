@@ -12,10 +12,10 @@ devDependencies:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.32)
   axios:
-    specifier: ^1.6.1
+    specifier: ^1.6.2
     version: 1.6.2
   laravel-vite-plugin:
-    specifier: ^0.8.0
+    specifier: ^0.8.1
     version: 0.8.1(vite@4.5.1)
   postcss:
     specifier: ^8.4.32
@@ -24,7 +24,7 @@ devDependencies:
     specifier: ^3.3.6
     version: 3.3.6
   vite:
-    specifier: ^4.0.0
+    specifier: ^4.5.1
     version: 4.5.1
 
 packages:
@@ -367,7 +367,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001566
-      electron-to-chromium: 1.4.608
+      electron-to-chromium: 1.4.609
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
     dev: true
@@ -431,8 +431,8 @@ packages:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
     dev: true
 
-  /electron-to-chromium@1.4.608:
-    resolution: {integrity: sha512-J2f/3iIIm3Mo0npneITZ2UPe4B1bg8fTNrFjD8715F/k1BvbviRuqYGkET1PgprrczXYTHFvotbBOmUp6KE0uA==}
+  /electron-to-chromium@1.4.609:
+    resolution: {integrity: sha512-ihiCP7PJmjoGNuLpl7TjNA8pCQWu09vGyjlPYw1Rqww4gvNuCcmvl+44G+2QyJ6S2K4o+wbTS++Xz0YN8Q9ERw==}
     dev: true
 
   /esbuild@0.18.20:
