@@ -1,21 +1,12 @@
 <div>
-    <form wire:submit="register">
-        <!-- Name -->
-        <div>
-            <x-input
-                :label="__('Name')"
-                wire:model="name"
-                autofocus
-                autocomplete="name"
-            />
-        </div>
-
+    <form wire:submit="resetPassword">
         <!-- Email Address -->
-        <div class="mt-4">
+        <div>
             <x-input
                 type="email"
                 :label="__('Email Address')"
                 wire:model="email"
+                autofocus
                 autocomplete="username"
             />
         </div>
@@ -38,18 +29,10 @@
             />
         </div>
 
-        <!-- Already registered? -->
         <div class="mt-4 flex items-center justify-end">
-            <x-link
-                :href="route('login')"
-                :text="__('Already registered?')"
-                wire:navigate
-            />
-
-            <!-- Register -->
             <x-button
                 class="ms-4"
-                :text="__('Register')"
+                :text="__('Reset Password')"
             />
         </div>
     </form>
