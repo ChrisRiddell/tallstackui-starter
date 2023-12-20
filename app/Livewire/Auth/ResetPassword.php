@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Locked;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class ResetPassword extends Component
@@ -74,6 +75,7 @@ class ResetPassword extends Component
     }
 
     #[Layout('components.layouts.guest')]
+    #[Title('Reset Password')]
     public function render()
     {
         return view('livewire.auth.reset-password');

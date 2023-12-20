@@ -4,6 +4,7 @@ namespace App\Livewire\Auth;
 
 use Illuminate\Support\Facades\Password;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class ForgotPassword extends Component
@@ -38,6 +39,7 @@ class ForgotPassword extends Component
     }
 
     #[Layout('components.layouts.guest')]
+    #[Title('Forgot Password')]
     public function render()
     {
         return view('livewire.auth.forgot-password');

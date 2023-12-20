@@ -6,6 +6,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class ConfirmPassword extends Component
@@ -39,6 +40,7 @@ class ConfirmPassword extends Component
     }
 
     #[Layout('components.layouts.guest')]
+    #[Title('Confirm Password')]
     public function render()
     {
         return view('livewire.auth.confirm-password');

@@ -7,6 +7,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class VerifyEmail extends Component
@@ -38,6 +39,7 @@ class VerifyEmail extends Component
     }
 
     #[Layout('components.layouts.guest')]
+    #[Title('Verify Email')]
     public function render()
     {
         return view('livewire.auth.verify-email');

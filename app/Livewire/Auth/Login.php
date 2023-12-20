@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
@@ -88,6 +89,7 @@ class Login extends Component
     }
 
     #[Layout('components.layouts.guest')]
+    #[Title('Login')]
     public function render()
     {
         return view('livewire.auth.login');
