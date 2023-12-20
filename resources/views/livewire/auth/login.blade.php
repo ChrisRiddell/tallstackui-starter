@@ -38,13 +38,13 @@
 
         <!-- Forgot your password -->
         <div class="mt-4 flex items-center justify-end">
-            {{-- @if (Route::has('password.request'))
+            @if (Route::has('password.request'))
                 <x-link
                     :href="route('password.request')"
                     :text="__('Forgot your password?')"
                     wire:navigate
                 />
-            @endif --}}
+            @endif
 
             <!-- Login -->
             <x-button
