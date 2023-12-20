@@ -49,7 +49,7 @@
             <!-- Login -->
             <x-button
                 class="ms-3"
-                text="Log in"
+                :text="__('Log in')"
             />
         </div>
     </form>
