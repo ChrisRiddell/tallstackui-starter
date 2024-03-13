@@ -14,10 +14,8 @@
             {{ __('Resend Verification Email') }}
         </x-button>
 
-        <x-button
-            color="secondary"
-            wire:click="logout"
-        >
+        <x-button color="secondary"
+                  wire:click="logout">
             {{ __('Log Out') }}
         </x-button>
     </div>

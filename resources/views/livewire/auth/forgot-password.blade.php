@@ -5,30 +5,24 @@
 
     <!-- Session Status -->
     @if (session('status'))
-        <x-alert
-            text="session('status')"
-            color="blue"
-            light
-        />
+        <x-alert text="session('status')"
+                 color="blue"
+                 light />
     @endif
 
     <form wire:submit="sendPasswordResetLink">
         <!-- Email Address -->
         <div>
-            <x-input
-                type="email"
-                :label="__('Email Address')"
-                wire:model="email"
-                autofocus
-                autocomplete="username"
-            />
+            <x-input type="email"
+                     :label="__('Email Address')"
+                     wire:model="email"
+                     autofocus
+                     autocomplete="username" />
         </div>
 
         <div class="mt-4 flex items-center justify-end">
-            <x-button
-                class="ms-3"
-                :text="__('Email Password Reset Link')"
-            />
+            <x-button class="ms-3"
+                      :text="__('Email Password Reset Link')" />
         </div>
     </form>
 </div>

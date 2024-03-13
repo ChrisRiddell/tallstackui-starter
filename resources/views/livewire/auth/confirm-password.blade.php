@@ -6,18 +6,14 @@
     <form wire:submit="confirmPassword">
         <!-- Password -->
         <div>
-            <x-password
-                :label="__('Password')"
-                wire:model="password"
-                autocomplete="current-password"
-            />
+            <x-password :label="__('Password')"
+                        wire:model="password"
+                        autocomplete="current-password" />
         </div>
 
         <div class="mt-4 flex justify-end">
-            <x-button
-                class="ms-3"
-                :text="__('Confirm')"
-            />
+            <x-button class="ms-3"
+                      :text="__('Confirm')" />
         </div>
     </form>
 </div>
