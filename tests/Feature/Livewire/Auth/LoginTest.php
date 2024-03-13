@@ -2,7 +2,6 @@
 
 use App\Livewire\Auth\Login;
 use App\Models\User;
-use App\Providers\RouteServiceProvider;
 use Livewire\Livewire;
 
 it('renders successfully', function () {
@@ -21,7 +20,7 @@ test('users can authenticate using the login screen', function () {
 
     $component
         ->assertHasNoErrors()
-        ->assertRedirect(RouteServiceProvider::HOME);
+        ->assertRedirect(route('dashboard', absolute: false));
 
     $this->assertAuthenticated();
 });

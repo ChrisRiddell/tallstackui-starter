@@ -2,7 +2,6 @@
 
 namespace App\Livewire\Auth;
 
-use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Lockout;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;
@@ -36,7 +35,7 @@ class Login extends Component
 
         Session::regenerate();
 
-        $this->redirect(session('url.intended', RouteServiceProvider::HOME), navigate: true);
+        $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
     }
 
     /**

@@ -2,7 +2,6 @@
 
 namespace App\Livewire\Auth;
 
-use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Layout;
@@ -33,10 +32,7 @@ class ConfirmPassword extends Component
 
         session(['auth.password_confirmed_at' => time()]);
 
-        $this->redirect(
-            session('url.intended', RouteServiceProvider::HOME),
-            navigate: true
-        );
+        $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
     }
 
     #[Layout('components.layouts.guest')]
