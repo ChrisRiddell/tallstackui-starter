@@ -10,10 +10,6 @@ use App\Livewire\Auth\VerifyEmail;
 use App\Livewire\Dashboard;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::middleware('guest')->group(function () {
 
     Route::get('login', Login::class)
@@ -42,6 +38,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('dashboard', Dashboard::class)
+    Route::get('/', Dashboard::class)
         ->name('dashboard');
 });
