@@ -25,7 +25,7 @@ test('password can be confirmed', function () {
     $component->call('confirmPassword');
 
     $component
-        ->assertRedirect('/dashboard')
+        ->assertRedirect('/')
         ->assertHasNoErrors();
 });
 
