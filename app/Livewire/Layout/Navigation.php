@@ -23,7 +23,7 @@ class Navigation extends Component
                 'name' => 'Page',
                 'path' => '#',
                 'icon' => 'clock',
-            ]
+            ],
         ];
 
         $this->accountLinks = [
